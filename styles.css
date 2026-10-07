@@ -5,3 +5,4 @@
 h1{font-family:Arial,sans-serif;font-weight:800;letter-spacing:-3px}.brand{text-transform:uppercase;letter-spacing:1px;font-size:21px}
 .tile{border:0;border-top:3px solid var(--accent)}
 .price{font-size:25px;color:var(--accent)}
+.grid{gap:32px}.tile{padding:30px}

@@ -35,4 +35,4 @@ section + section { margin-top: 50px; }
 footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; padding: 28px 0; border-top: 3px solid #233d34; font-size: 13px; }
 a:focus-visible { outline: 3px solid #315843; outline-offset: 6px; }
 .brand{text-transform:uppercase;letter-spacing:2px}.hero{border-radius:0}.product h2{font-family:Arial,sans-serif;font-weight:700}
-.hero{background:#25392f;color:#fff8e7;padding:56px 28px}.hero h1{font-family:Arial,sans-serif;font-size:58px;font-weight:800}.hero .button{background:#fff8e7;color:#25392f}.tile{border-left:12px solid #dca65c}
+.hero{flex-direction:row-reverse;border:0}.hero h1{font-size:70px;font-family:Georgia,serif;font-style:italic}.tile{flex-basis:420px;border-radius:0}

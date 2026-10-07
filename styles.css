@@ -1,8 +1,8 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: auto; }
-body { margin: 0; background: #f4e6d0; color: #4d3428; font-family: Arial, sans-serif; font-size: 17px; line-height: 1.6; }
+body { margin: 0; background: #163f39; color: #f8e9c8; font-family: Arial, sans-serif; font-size: 17px; line-height: 1.6; }
 header, main, footer { width: 94%; max-width: 1200px; margin: auto; }
-header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px; padding: 25px 0; border-bottom: 3px solid #4d3428; }
+header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px; padding: 25px 0; border-bottom: 3px solid #f8e9c8; }
 .brand { font-size: 27px; font-weight: 800; letter-spacing: -1px; }
 a { color: inherit; text-underline-offset: 5px; }
 header a { text-decoration: none; }
@@ -14,7 +14,7 @@ h2 { font-family: Georgia, serif; font-size: 32px; line-height: 1.15; font-weigh
 h3 { font-size: 22px; line-height: 1.2; }
 p { max-width: 660px; }
 .lede { font-size: 20px; max-width: 570px; }
-.hero { display: flex; flex-wrap: wrap; align-items: center; gap: 30px; min-height: 440px; padding: 34px; border: 2px solid #4d3428; }
+.hero { display: flex; flex-wrap: wrap; align-items: center; gap: 30px; min-height: 440px; padding: 34px; border: 2px solid #f8e9c8; }
 .hero > div { flex: 1 1 350px; min-width: 0; }
 .hero img { flex: 1 1 350px; width: 46%; max-width: 100%; min-width: 0; height: 360px; object-fit: cover; display: block; }
 section + section { margin-top: 50px; }
@@ -25,16 +25,18 @@ section + section { margin-top: 50px; }
 .tile h2 { font-size: 30px; }
 .price { font-size: 25px; font-weight: 700; }
 .button { display: inline-block; background: #25392f; color: #fff8e7; padding: 15px 23px; text-decoration: none; font-size: 15px; font-weight: 700; border: 2px solid #25392f; }
-.band { background: #25392f; color: #fff9ec; padding: 36px; border: 2px solid #4d3428; }
+.band { background: #25392f; color: #fff9ec; padding: 36px; border: 2px solid #f8e9c8; }
 .band p { margin-bottom: 16px; }
 .toolbar { display: flex; flex-wrap: wrap; gap: 18px; padding: 24px; background: #fffaf0; color: #25392f; margin: 28px 0; border: 2px solid #25392f; }
 .availability { display: block; border-top: 2px solid #25392f; padding-top: 14px; font-size: 14px; }
-.spec-row { display: flex; flex-wrap: wrap; gap: 24px; padding: 18px 0; border-bottom: 1px solid #4d3428; }
+.spec-row { display: flex; flex-wrap: wrap; gap: 24px; padding: 18px 0; border-bottom: 1px solid #f8e9c8; }
 .spec-row strong { min-width: 130px; }
 .hidden { display: none; }
-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; padding: 28px 0; border-top: 3px solid #4d3428; font-size: 13px; }
-a:focus-visible { outline: 3px solid #94513c; outline-offset: 6px; }
+footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; padding: 28px 0; border-top: 3px solid #f8e9c8; font-size: 13px; }
+a:focus-visible { outline: 3px solid #d8b66b; outline-offset: 6px; }
+.hero{flex-direction:row-reverse;border:0;padding:44px 28px}.hero h1{font-family:Arial,sans-serif;font-weight:800;font-size:64px}.tile{border:0;border-top:10px solid #25392f}
 .brand{text-transform:uppercase;letter-spacing:2px}.hero{border-radius:0}.product h2{font-family:Arial,sans-serif;font-weight:700}
-.hero{background:#fffaf0;color:#25392f;border-bottom:18px solid #25392f}.hero h1{font-size:64px}.tile{border-top:12px solid #25392f}
+.hero{border-top:18px solid #dca65c}.hero h1{font-size:50px}.grid{gap:36px}
+body{background:#184c80;color:#f7f8ff}.hero{background:#cce6ff;color:#172f50}.tile{background:#d4e9fa;color:#172f50}.band{background:#153457;color:#fff}
 /* Shared card and heading rules preserve the established presentation. */
 /* Catalog status is static; no purchase or persistent bag is provided. */

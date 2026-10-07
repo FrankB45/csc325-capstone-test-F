@@ -1,61 +1,31 @@
-# Test repo C — TrailSupply
+# Test repo F — Over-limit TrailSupply
 
-A passive five-page outdoor catalog with major palette and layout milestones, exact reversions, and controlled missing-page cases.
+A matched copy of C with one extra documentation commit. The website itself remains valid.
 
-**Expected result: Accept · exactly at the history limit.**
+**Expected result: Reject · exceeds 50 commits.**
 
-Exactly **50 commits** on main. Commit numbers are oldest first.
+Exactly **51 commits** on main. Commit numbers are oldest first.
 Synthetic history for Git Gallery testing; all content is fictional.
 
 ## Scenarios
 
-### 50-commit boundary
+### One commit over the limit
 
-Page: `index.html`. Versions: 1, 6, 11, 17, 22, 28, 33, 39, 44, 50.
+Page: `index.html`. Versions: 51.
 
-Compatibility passes at exactly 50 default-branch commits. No more than 10 versions can be captured in one analysis. The homepage is present and usable in every commit.
+Reject compatibility with a message stating the 50-commit limit. Do not proceed to page/commit selection or capture, even though the website renders.
 
-### Partial capture failure
+### Matched boundary control
 
-Page: `help.html`. Versions: 31, 32, 33, 34.
+Page: `index.html`. Versions: 50, 51.
 
-31 and 34 succeed; 32 and 33 fail because help.html is absent. Overall status is Partially Complete, with successful screenshots retained and failed entries identified.
-
-### All selected captures fail
-
-Page: `help.html`. Versions: 1, 10, 20, 32, 33.
-
-All five captures fail for a missing target page. Overall status is Failed. No screenshot from another page or commit is substituted.
-
-### Crowded cards and recovery
-
-Page: `catalog.html`. Versions: 36, 37, 38.
-
-All captures succeed. 37 crowds the cards; 38 restores the appearance of 36. Compare 36/37 for a visible difference and 36/38 for no difference.
-
-### Nonvisual changes
-
-Page: `index.html`. Versions: 40, 41, 42, 43.
-
-All initial screenshots show the same page. Documentation, landmark labels, and CSS comments must not be invented as visual changes.
-
-### Palette experiment reverted
-
-Page: `index.html`. Versions: 45, 46, 47.
-
-46 changes the palette. 47 restores 45's appearance. 45/46 differ; 45/47 match.
-
-### Static catalog navigation
-
-Page: `catalog.html`. Versions: 50.
-
-The catalog renders six products. The Ridge Daypack details link opens product.html and the Field guide link opens help.html. There is no scripted search, sorting, cart, purchase, or backend.
+C is accepted at 50; F is rejected at 51. F's first 50 commit SHAs match C. Commit 51 changes only README.md; website files and appearance are unchanged.
 
 ## Fixture rules
 
-- catalog.html starts at 6, product.html at 17, about.html at 21, and help.html at 27.
-- help.html is removed at 32, remains absent at 33, and returns at 34.
-- Use F as the matched rejection case: its first 50 commits are exactly this history.
+- This explorer can render F for inspection; Git Gallery is expected to reject it before capture.
+- A branch or tag with fewer commits is not a substitute for this default-branch boundary test.
+- Previously saved analyses must remain accessible when a new compatibility check is rejected.
 - Every historical page fits the current passive HTML/CSS/PNG profile. Large visual redesigns are intentional synthetic test data; only the documented identical pairs should stay unchanged.
 
 ## Preview

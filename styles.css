@@ -8,4 +8,5 @@ h1{font-family:Arial,sans-serif;font-weight:800;letter-spacing:-3px}.brand{text-
 .grid{gap:32px}.tile{padding:30px}
 .hero h1{color:#70452d}
 .button,button{border-radius:28px;padding:14px 25px}
+:root{--paper:#e3ebf1;--accent:#35526e}
 /* Product cards inherit shared color and spacing tokens. */

@@ -28,6 +28,6 @@ document.querySelectorAll('.add').forEach(button => button.addEventListener('cli
   bag++;
   const count = document.querySelector('#bag-count');
   if (count) count.textContent = `Bag · ${bag}`;
-  button.textContent = 'Added to bag';
+  button.textContent = `Added ${button.dataset.product}`;
 }));
 updateProducts();

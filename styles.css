@@ -36,4 +36,4 @@ footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20
 a:focus-visible { outline: 3px solid #e5b86e; outline-offset: 6px; }
 .hero{flex-direction:row-reverse;border:0;padding:44px 28px}.hero h1{font-family:Arial,sans-serif;font-weight:800;font-size:64px}.tile{border:0;border-top:10px solid #25392f}
 .brand{text-transform:uppercase;letter-spacing:2px}.hero{border-radius:0}.product h2{font-family:Arial,sans-serif;font-weight:700}
-.hero{border-top:18px solid #dca65c}.hero h1{font-size:50px}.grid{gap:36px}
+main{max-width:960px}.hero{flex-direction:column;text-align:center}.hero > div{flex:0 1 auto;width:100%}.hero h1,.hero p{margin-left:auto;margin-right:auto}.hero img{width:100%;flex:0 1 auto;height:310px}

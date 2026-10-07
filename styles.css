@@ -36,6 +36,6 @@ footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20
 a:focus-visible { outline: 3px solid #d8b66b; outline-offset: 6px; }
 .hero{flex-direction:row-reverse;border:0;padding:44px 28px}.hero h1{font-family:Arial,sans-serif;font-weight:800;font-size:64px}.tile{border:0;border-top:10px solid #25392f}
 .brand{text-transform:uppercase;letter-spacing:2px}.hero{border-radius:0}.product h2{font-family:Arial,sans-serif;font-weight:700}
-.hero{flex-direction:row-reverse;border:0}.hero h1{font-size:70px;font-family:Georgia,serif;font-style:italic}.tile{flex-basis:420px;border-radius:0}
+.hero{background:#fffaf0;color:#25392f;border-bottom:18px solid #25392f}.hero h1{font-size:64px}.tile{border-top:12px solid #25392f}
 /* Shared card and heading rules preserve the established presentation. */
 /* Catalog status is static; no purchase or persistent bag is provided. */

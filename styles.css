@@ -2,3 +2,4 @@
 
 :root{--paper:#eef0e7;--ink:#263d32;--accent:#3e6047;--surface:#fafbf5}
 :root{--paper:#f4eee2;--accent:#93602f;--surface:#fffaf1}
+h1{font-family:Arial,sans-serif;font-weight:800;letter-spacing:-3px}.brand{text-transform:uppercase;letter-spacing:1px;font-size:21px}

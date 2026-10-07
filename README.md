@@ -7,4 +7,4 @@ Serve this directory with `python3 -m http.server 8000` and open http://localhos
 The supported static sites use only HTML, CSS, plain JavaScript, and original local SVG artwork.
 No external requests, fonts, accounts, or secrets are needed.
 
-All data is fixed. The demonstration bag is in-page only and resets on navigation. No checkout or real orders are available.
+All products, policies and prices are fictional. The in-page bag resets on navigation; no checkout exists. Fixed data and local illustrations make screenshots repeatable.
